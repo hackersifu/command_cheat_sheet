@@ -1,5 +1,5 @@
 # HackerSifu's Command Cheat Sheet
-Collection of commands that are helpful for pen testing and other command line activities.
+This is a collection of commands that I've found helpful, and a lot of times end up reusing (and trying to find them again in some of these cases as well). I'll continue to add to this list, and feel free to provide any suggestions or additions.
 
 ### Adding text to the end of each line in a file:
 ```
