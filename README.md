@@ -25,3 +25,7 @@ echo '<text to insert here>' >> <filename>
 ```
 sudo apt-get update -y && sudo apt-get dist-upgrade -y
 ```
+
+### Count directories/files within a directory:
+```
+tree -L 1 | tail 1
