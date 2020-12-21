@@ -29,3 +29,9 @@ sudo apt-get update -y && sudo apt-get dist-upgrade -y
 ### Count directories/files within a directory:
 ```
 tree -L 1 | tail 1
+```
+
+### grep simulator for AND operator
+```
+grep -E "item1.*item2" .
+```
