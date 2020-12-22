@@ -35,3 +35,14 @@ tree -L 1 | tail 1
 ```
 grep -E "item1.*item2" .
 ```
+
+### (Athena SQL) Using if statement within a WHERE clause
+```
+# format:  if( condition, value_if_true, value_if_false)
+WHERE if(<field_name> = '<field value>','true','false')
+```
+
+### (Athena SQL) Counting aggragated records
+```
+SELECT <field_name> , count(*) AS <count_field_name>
+```
