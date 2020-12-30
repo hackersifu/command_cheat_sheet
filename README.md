@@ -46,3 +46,8 @@ WHERE if(<field_name> = '<field value>','true','false')
 ```
 SELECT <field_name> , count(*) AS <count_field_name>
 ```
+
+### Review open Linux ports
+```
+netstat -l
+```
