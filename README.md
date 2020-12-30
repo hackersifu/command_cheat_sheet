@@ -51,3 +51,13 @@ SELECT <field_name> , count(*) AS <count_field_name>
 ```
 netstat -l
 ```
+
+### Append text to end of file (quickly)
+```
+echo 'text' >> file
+```
+
+### Append text to beginning of file (quickly)
+```
+sed -i "1iTEXTHERE" file
+```
