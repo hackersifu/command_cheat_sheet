@@ -61,3 +61,9 @@ echo 'text' >> file
 ```
 sed -i "1iTEXTHERE" file
 ```
+
+### Quick Base64 Decode
+```
+# In bash:
+echo <base 64 coded string here> | base64 -d
+```
