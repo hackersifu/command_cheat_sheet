@@ -67,3 +67,8 @@ sed -i "1iTEXTHERE" file
 # In bash:
 echo <base 64 coded string here> | base64 -d
 ```
+
+### Search for text within files (quickly)
+```
+grep -rnw . -e "<pattern>"
+```
