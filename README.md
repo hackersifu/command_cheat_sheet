@@ -72,3 +72,8 @@ echo <base 64 coded string here> | base64 -d
 ```
 grep -rnw . -e "<pattern>"
 ```
+
+### Run a detached screen command, for running commands in the background
+```
+screen -dmS <name> sh -c "<command>; exec bash"
+```
