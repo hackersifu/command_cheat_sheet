@@ -77,3 +77,8 @@ grep -rnw . -e "<pattern>"
 ```
 screen -dmS <name> sh -c "<command>; exec bash"
 ```
+
+### Search for text while ignoring case (quickly)
+```
+grep -i <texthere> *
+```
