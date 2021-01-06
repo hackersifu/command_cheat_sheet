@@ -82,3 +82,11 @@ screen -dmS <name> sh -c "<command>; exec bash"
 ```
 grep -i <texthere> *
 ```
+
+### Git Setup Commands
+```
+# Configuring Git User
+git config --global user.name <user>
+# Clone a Git Repo
+git clone <url>
+```
