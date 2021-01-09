@@ -90,3 +90,8 @@ git config --global user.name <user>
 # Clone a Git Repo
 git clone <url>
 ```
+
+### Perform a difference between two lists (Python)
+```
+final_list = (list(set(first_list) - set(second_list)))
+```
