@@ -95,3 +95,10 @@ git clone <url>
 ```
 final_list = (list(set(first_list) - set(second_list)))
 ```
+
+### How to check out an existing branch into VSCode (Git)
+```
+git pull origin <new_branch>
+git fetch origin <new_branch>
+git checkout <new_branch>
+```
