@@ -73,6 +73,18 @@ echo <base 64 coded string here> | base64 -d
 grep -rnw . -e "<pattern>"
 ```
 
+### Beginner screen commands
+```
+# Starting a screen:
+screen -S my_screen_session_name
+# List running screens:
+screen -ls
+# Return to running screen (if only one is running):
+screen -r
+# If multiple are running:
+screen -r my_screen_session_name
+```
+
 ### Run a detached screen command, for running commands in the background
 ```
 screen -dmS <name> sh -c "<command>; exec bash"
