@@ -114,3 +114,8 @@ git pull origin <new_branch>
 git fetch origin <new_branch>
 git checkout <new_branch>
 ```
+
+### Check sudo version
+```
+sudo -V
+```
