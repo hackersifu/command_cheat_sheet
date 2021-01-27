@@ -119,3 +119,8 @@ git checkout <new_branch>
 ```
 sudo -V
 ```
+
+### Search script.db for nmap scripts (shows type of script)
+```
+cat /usr/share/nmap/scripts/script.db
+```
