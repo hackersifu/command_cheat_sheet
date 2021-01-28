@@ -124,3 +124,9 @@ sudo -V
 ```
 cat /usr/share/nmap/scripts/script.db
 ```
+
+### Various awk commands
+```
+# Add line number to awk command
+awk '{print NR,$0} file.txt
+```
