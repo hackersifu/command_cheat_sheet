@@ -130,3 +130,10 @@ cat /usr/share/nmap/scripts/script.db
 # Add line number to awk command
 awk '{print NR,$0} file.txt
 ```
+
+### Check to see if a directory exist, then create it if it doesn't (Bash)
+```
+if [ ! -f /home/user ]: then
+  mkdir /home/user
+fi
+```
