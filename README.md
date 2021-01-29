@@ -137,3 +137,8 @@ if [ ! -f /home/user ]: then
   mkdir /home/user
 fi
 ```
+
+### Show partitions for a table (Amazon Athena)
+```
+SHOW PARTITIONS <table>
+```
