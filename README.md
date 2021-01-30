@@ -47,6 +47,19 @@ WHERE if(<field_name> = '<field value>','true','false')
 SELECT <field_name> , count(*) AS <count_field_name>
 ```
 
+### (Athena SQL) Show partitions for a table
+```
+SHOW PARTITIONS <table>
+```
+
+### (Athena SQL) Skip the first line when creating a table for data
+```
+TBLPROPERTIES
+(
+ "skip.header.line.count"="1"
+)
+```
+
 ### Review open Linux ports
 ```
 netstat -l
@@ -138,7 +151,4 @@ if [ ! -f /home/user ]: then
 fi
 ```
 
-### Show partitions for a table (Amazon Athena)
-```
-SHOW PARTITIONS <table>
-```
+
