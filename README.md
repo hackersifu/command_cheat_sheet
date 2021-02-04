@@ -151,4 +151,20 @@ if [ ! -f /home/user ]: then
 fi
 ```
 
+### (Python) Handy imports for starting a script
+```
+import logging
+import os
+import json
+import boto3
+import time
+import datetime
+from botocore.exceptions import ClientError
+
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+current_date = datetime.datetime.now()
+current_date_string = str(current_date)
+```
 
