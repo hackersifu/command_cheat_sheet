@@ -168,4 +168,8 @@ current_date = datetime.datetime.now()
 current_date_string = str(current_date)
 ```
 
+### (AWS CLI) Parse S3 and place into a file
+```
+aws s3 ls %s --recursive | tail -n +1 | head -1" % file_name
+```
 
