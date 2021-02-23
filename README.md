@@ -176,8 +176,16 @@ aws s3 ls %s --recursive | tail -n +1 | head -1" % file_name
 ### (Git) How to checkout a remote branch
 ```
 git pull
-#List current branches after pull
+# List current branches after pull
 git branch
-#Switch to branch
+# Switch to branch
 git checkout new branch
+```
+
+### (Git) How to commit and push
+```
+# Commit and comment your code
+git commit -m "comment here"
+# Push your code
+git push
 ```
