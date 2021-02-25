@@ -189,3 +189,8 @@ git commit -m "comment here"
 # Push your code
 git push
 ```
+
+### How to beautify large JSON files
+```
+cat <file_name> | python -m json.tool > <new_file_name>
+```
