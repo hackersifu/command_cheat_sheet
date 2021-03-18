@@ -11,7 +11,7 @@ sed -e 's/$/<text to insert here>/' -i <filename>.txt
 tar -xvf <filename>
 ```
 
-### Adding text to the end of a file name:
+### Adding text to the end of a file:
 ```
 echo '<text to insert here>' >> <filename>
 ```
