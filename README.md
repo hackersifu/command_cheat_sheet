@@ -199,3 +199,17 @@ cat <file_name> | python -m json.tool > <new_file_name>
 ```
 jq --raw-output '.field,.sub_field'
 ```
+
+### Mass Comment/Uncomment of lines in VSCode
+```
+Windows: Ctrl + /
+Mac: Command + /
+```
+
+### (argparse) How to use an option with no required argument
+```
+parser.add_argument('--fake-option', action='store_true')
+select = parser.parse_args()
+if select.fake-option:
+    dostuff()
+```
