@@ -194,3 +194,8 @@ git push
 ```
 cat <file_name> | python -m json.tool > <new_file_name>
 ```
+
+### Output raw string from jq
+```
+jq --raw-output '.field,.sub_field'
+```
