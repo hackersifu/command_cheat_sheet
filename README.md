@@ -213,3 +213,9 @@ select = parser.parse_args()
 if select.fake-option:
     dostuff()
 ```
+
+### (Bash) Create virtual environment for running Python
+```
+virtualenv --python=python3 venv
+source venv/bin/activate
+```
