@@ -219,3 +219,10 @@ if select.fake-option:
 virtualenv --python=python3 venv
 source venv/bin/activate
 ```
+
+### (Bash) Starting an Apache2 server
+```
+sudo apt update
+sudo apt install apache2
+service apache2 start
+```
