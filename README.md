@@ -200,10 +200,15 @@ cat <file_name> | python -m json.tool > <new_file_name>
 jq --raw-output '.field,.sub_field'
 ```
 
-### Mass Comment/Uncomment of lines in VSCode
+### (VSCode) Mass Comment/Uncomment of lines in VSCode
 ```
 Windows: Ctrl + /
 Mac: Command + /
+```
+
+### (VSCode) Go to beginning of all lines
+```
+Mac: Ctrl + A (to select all lines), Shift + Alt + I (to put cursor at end of all lines), Home key (to go to beginning of each line)
 ```
 
 ### (argparse) How to use an option with no required argument
