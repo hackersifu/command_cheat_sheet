@@ -228,7 +228,7 @@ source venv/bin/activate
 ### (Bash) Starting an Apache2 server
 ```
 sudo apt update
-sudo apt install apache2
+sudo apt install apache2 -y
 service apache2 start
 ```
 
