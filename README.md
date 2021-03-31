@@ -231,3 +231,10 @@ sudo apt update
 sudo apt install apache2
 service apache2 start
 ```
+
+### (Python) Iterate cleanly on JSON Keys that may or may not exist
+```
+if 'JSONKey' in json:
+    variable = json['JSONKey']
+    print(variable)
+```
