@@ -238,3 +238,23 @@ if 'JSONKey' in json:
     variable = json['JSONKey']
     print(variable)
 ```
+
+### (Ruby) Create vulnerable SSRF server for testing (credit to HackerOne: https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF)
+```
+# Create a Ruby file for running a vulnerable server
+vim vuln-server.rb
+# Add the following content to the file:
+require 'sinatra'
+require 'open-uri'
+
+set :bind, '0.0.0.0'
+set :port, 80
+
+get '/' do
+  format 'RESPONSE: %s', open(params[:url]).read
+end
+# Install Sinatra using Ruby
+gem install sinatra
+# Run the server in the background
+ruby vuln-server.rb
+```
