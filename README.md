@@ -239,7 +239,8 @@ if 'JSONKey' in json:
     print(variable)
 ```
 
-### (Ruby) Create vulnerable SSRF server for testing (credit to HackerOne: https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF)
+### (Ruby) Create vulnerable SSRF server for testing 
+* Credit to HackerOne: https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF
 ```
 # Create a Ruby file for running a vulnerable server
 vim vuln-server.rb
