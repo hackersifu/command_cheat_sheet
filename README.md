@@ -259,3 +259,12 @@ gem install sinatra
 # Run the server in the background
 ruby vuln-server.rb
 ```
+
+### (Python) Add timestamp function to replace print
+```
+original_print = print
+
+def timestamp(*args, **kwargs):
+    original_print(datetime.datetime.now(), *args, **kwargs)
+print = timestamp
+```
