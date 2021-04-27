@@ -268,3 +268,27 @@ def timestamp(*args, **kwargs):
     original_print(datetime.datetime.now(), *args, **kwargs)
 print = timestamp
 ```
+
+### (Python) Advanced setup of logging module
+```
+# Code to print out info within the terminal
+logFormatter = '%(asctime)s - %(levelname)s - %(message)s'
+logging.basicConfig(format=logFormatter, level=logging.INFO)
+
+# Code to set the logger up
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Code to set up the logging file locally for review
+output_handle = logging.FileHandler('loggertest.log')
+output_handle.setLevel(logging.INFO)
+logger.addHandler(output_handle)
+
+# Code to set up the logging format for logs within the logging file
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+output_handle.setFormatter(formatter)
+
+# Code for the handler needed for inputting the logs into the logging file
+logger.addHandler(output_handle)
+logger.info("Logs are contained in loggertest.log")
+```
