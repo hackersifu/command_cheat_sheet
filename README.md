@@ -260,15 +260,6 @@ gem install sinatra
 ruby vuln-server.rb
 ```
 
-### (Python) Add timestamp function to replace print
-```
-original_print = print
-
-def timestamp(*args, **kwargs):
-    original_print(datetime.datetime.now(), *args, **kwargs)
-print = timestamp
-```
-
 ### (Python) Advanced setup of logging module
 ```
 # Code to print out info within the terminal
@@ -291,4 +282,13 @@ output_handle.setFormatter(formatter)
 # Code for the handler needed for inputting the logs into the logging file
 logger.addHandler(output_handle)
 logger.info("Logs are contained in loggertest.log")
+```
+
+### (Python) Add timestamp function to replace print
+```
+original_print = print
+
+def timestamp(*args, **kwargs):
+    original_print(datetime.datetime.now(), *args, **kwargs)
+print = timestamp
 ```
