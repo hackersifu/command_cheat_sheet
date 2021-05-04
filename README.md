@@ -108,12 +108,17 @@ screen -dmS <name> sh -c "<command>; exec bash"
 grep -i <texthere> *
 ```
 
-### Git Setup Commands
+### (Git) Git Setup Commands
 ```
 # Configuring Git User
 git config --global user.name <user>
 # Clone a Git Repo
 git clone <url>
+```
+
+### (Git) Start ssh-agent
+```
+eval "$(ssh-agent -s)"
 ```
 
 ### Perform a difference between two lists (Python)
