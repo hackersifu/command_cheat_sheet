@@ -297,3 +297,8 @@ def timestamp(*args, **kwargs):
     original_print(datetime.datetime.now(), *args, **kwargs)
 print = timestamp
 ```
+
+### (Bash) Change Terminal Prompt
+```
+export PS1='> '
+```
