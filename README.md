@@ -302,3 +302,8 @@ print = timestamp
 ```
 export PS1='> '
 ```
+
+### (HTML) Create a link in HTML
+```
+<a href="url">linkhere</a>
+```
