@@ -307,3 +307,17 @@ export PS1='> '
 ```
 <a href="url">linkhere</a>
 ```
+
+### (Python) Generate a random string
+```
+import string
+import random
+
+letters = string.ascii_letters
+numbers = string.digits
+special_chars = string.punctuation
+
+dummy_phrase = (''.join(random.choice(letters + numbers + special_chars) for char in range(24)))
+dummy_string = dummy_phrase.replace('@','').replace('/','').replace('"','')
+print(dummy_string)
+```
