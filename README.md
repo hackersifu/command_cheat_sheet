@@ -149,10 +149,17 @@ cat /usr/share/nmap/scripts/script.db
 awk '{print NR,$0} file.txt
 ```
 
-### Check to see if a directory exist, then create it if it doesn't (Bash)
+### (Bash) Check to see if a directory exists, then create it if it doesn't
 ```
 if [ ! -f /home/user ]: then
   mkdir /home/user
+fi
+```
+
+### (Bash) Check to see if a file exists, then create it if it doesn't
+```
+if [ ! -f /home/user/test.txt ]; then
+    touch /home/user/test.txt
 fi
 ```
 
