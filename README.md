@@ -310,6 +310,19 @@ print = timestamp
 export PS1='> '
 ```
 
+## (Bash) Read and store input as a variable
+```
+# Normal Mode
+echo Red or Blue? 
+read color
+echo $color
+
+# Silent Mode
+echo Green or Yellow?
+read -s color
+echo $color
+```
+
 ### (HTML) Create a link in HTML
 ```
 <a href="url">linkhere</a>
