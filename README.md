@@ -341,3 +341,12 @@ dummy_phrase = (''.join(random.choice(letters + numbers + special_chars) for cha
 dummy_string = dummy_phrase.replace('@','').replace('/','').replace('"','')
 print(dummy_string)
 ```
+
+### (Go) Code for creating initial Go project
+```
+package main
+
+import (
+	"fmt"
+)
+```
