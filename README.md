@@ -350,3 +350,28 @@ import (
 	"fmt"
 )
 ```
+
+### (Go) Code for creating a function and calling it
+```
+package main
+
+import (
+  "fmt"
+)
+
+func testing() {
+  fmt.Println("Hello World")
+}
+
+func main() {
+  testing() // Call the testing function above.
+}
+```
+
+### (Go) Code for defining variables
+```
+test_var := "Hello" // Defines a variable and adds the type based on intelligence
+var greeting string = "Hello" // Defines a variable and adds it specifically
+fmt.Println(test_var) // Prints the variable
+fmt.Println(greeting) // Prints the variable
+```
