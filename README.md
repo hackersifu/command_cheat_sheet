@@ -375,3 +375,24 @@ var greeting string = "Hello" // Defines a variable and adds it specifically
 fmt.Println(test_var) // Prints the variable
 fmt.Println(greeting) // Prints the variable
 ```
+
+### (Go) Code for using if/else statements
+```
+func if_testing() {
+	fmt.Println("Let's try an if statement. Say something.")
+	var if_input string
+	fmt.Scanln(&if_input)
+	if if_input == "something" {
+		fmt.Println("You said something.")
+		os.Exit(0)
+	} else if if_input == "nothing" {
+		fmt.Println("You said nothing.")
+		os.Exit(0)
+	} else if if_input == "random" {
+		fmt.Println("You said", if_input)
+		os.Exit(0)
+	} else {
+		fmt.Println("You said something else.")
+	}
+}
+```
