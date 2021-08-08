@@ -310,7 +310,7 @@ print = timestamp
 export PS1='> '
 ```
 
-## (Bash) Read and store input as a variable
+### (Bash) Read and store input as a variable
 ```
 # Normal Mode
 echo Red or Blue? 
@@ -321,6 +321,18 @@ echo $color
 echo Green or Yellow?
 read -s color
 echo $color
+```
+
+### (Bash) Use grep with line numbers
+```
+grep --number file.txt
+OR
+grep -n file.txt
+```
+
+### (Bash) How to do a line count with grep
+```
+cat file.txt | grep "cool phrase" | wc -l
 ```
 
 ### (HTML) Create a link in HTML
