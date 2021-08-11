@@ -408,3 +408,27 @@ func if_testing() {
 	}
 }
 ```
+
+### (Go) How to print output from AWS DescribeInstances API Call (AWS SDK for Go v1)
+```
+func ec2_test() {
+	session := session.Must(session.NewSessionWithOptions(session.Options{
+		SharedConfigState: session.SharedConfigEnable,
+	}))
+
+	ec2_client := ec2.New(session)
+	output, err := ec2_client.DescribeInstances(nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Let's describe some instances.")
+	//	fmt.Println(output)
+	for _, reserv := range output.Reservations { //This is how you parse the JSON content initially.
+		fmt.Println(reserv)                    // You can print out the variable here.
+		fmt.Println(reserv.Instances)          // For subfields, you can use this format.
+		for _, bdm := range reserv.Instances { // Can print out nested here as well.
+			fmt.Println(bdm.BlockDeviceMappings)
+		}
+	}
+}
+```
