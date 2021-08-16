@@ -237,6 +237,28 @@ virtualenv --python=python3 venv
 source venv/bin/activate
 ```
 
+### (vi) vi commands
+```
+:w - write to file
+:q (:q!) - quit file
+x - deletes characters
+u - undo change
+dd - deletes entire line
+p - paste
+yy - copy current line
+5yy - copy 5 current lines
+J - join the next line
+f - find character within a line
+/ - find word within file
+:%s - substitute words within the document (example: :%s/Word/word/gc) g = global, replaces each string within the file, c = confirmation
+:n - move to next file
+:N - move to previous file
+:e - add second file to edit
+:buffer - switch files
+:wq - save and quit
+:q! - quit without saving
+```
+
 ### (Bash) Starting an Apache2 server
 ```
 sudo apt update
