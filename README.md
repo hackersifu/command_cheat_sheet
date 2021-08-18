@@ -434,11 +434,12 @@ func if_testing() {
 ### (Go) How to print output from AWS DescribeInstances API Call (AWS SDK for Go v1)
 ```
 func ec2_test() {
+	// Standard session declaration for using AWS SDK for Go v1
 	session := session.Must(session.NewSessionWithOptions(session.Options{
 		SharedConfigState: session.SharedConfigEnable,
 	}))
 
-	ec2_client := ec2.New(session)
+	ec2_client := ec2.New(session) // Using the standard session declaration
 	output, err := ec2_client.DescribeInstances(nil)
 	if err != nil {
 		log.Fatal(err)
