@@ -202,6 +202,13 @@ git commit -m "comment here"
 git push
 ```
 
+### (Git) How to remove deleted branches from local
+```
+git branch -d <branch_name>
+OR
+git fetch -p
+```
+
 ### How to beautify large JSON files
 ```
 cat <file_name> | python -m json.tool > <new_file_name>
