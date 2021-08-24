@@ -462,3 +462,8 @@ func ec2_test() {
 	}
 }
 ```
+
+### (Go) Cross compile Go code to a Windows exe file from Linux/MacOS
+```
+GOOS=windows GOARCH=amd64 go build -o go_code.exe go_code.go
+```
