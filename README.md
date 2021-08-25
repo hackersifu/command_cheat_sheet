@@ -467,3 +467,19 @@ func ec2_test() {
 ```
 GOOS=windows GOARCH=amd64 go build -o go_code.exe go_code.go
 ```
+
+### (Go) How to use AND/OR/NOT in Go
+```
+// AND
+if a && b {
+	fmt.Println("Both a and b are true")
+}
+// OR
+if a || b {
+	fmt.Println("One of a and b is true")
+}
+// NOT
+if !a {
+	fmt.Println("a is false")
+}
+```
