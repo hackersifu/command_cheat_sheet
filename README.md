@@ -483,3 +483,8 @@ if !a {
 	fmt.Println("a is false")
 }
 ```
+
+### (Windows cmd) How to kill processes
+```
+taskkill /F /IM "taskname.exe"
+```
