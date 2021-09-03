@@ -364,6 +364,11 @@ grep -n file.txt
 cat file.txt | grep "cool phrase" | wc -l
 ```
 
+### (Bash) How to kill processes by name
+```
+pkill -f <process_name>
+```
+
 ### (HTML) Create a link in HTML
 ```
 <a href="url">linkhere</a>
