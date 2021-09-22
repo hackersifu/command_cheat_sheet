@@ -493,3 +493,10 @@ if !a {
 ```
 taskkill /F /IM "taskname.exe"
 ```
+
+### (Python) Starting a Virtual Environment
+```
+pip install virtualenv
+# Then
+python3 -m venv env
+```
