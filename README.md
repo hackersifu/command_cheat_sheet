@@ -500,3 +500,19 @@ pip install virtualenv
 # Then
 python3 -m venv env
 ```
+
+### (Python) Using mutliple conditions in if statements
+```
+if a == 1 && b == 2 {
+	fmt.Println("Both a and b are true")
+}
+# OR
+if (a == 1 and b ==2):
+	fmt.Println("Both a and b are true")
+```
+
+### (Python) Alternate way to add strings with variables
+```
+user = "John"
+print("Hello {name}".format(name=user))
+```
