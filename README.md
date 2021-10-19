@@ -388,7 +388,7 @@ dummy_string = dummy_phrase.replace('@','').replace('/','').replace('"','')
 print(dummy_string)
 ```
 
-### (Python) Perform de-dupe on list
+### (Python) Perform de-dupe on created list
 ```
 dupe_list = ['A', 'B', 'A']
 clean_list = []
