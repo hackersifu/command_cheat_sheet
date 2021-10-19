@@ -388,6 +388,15 @@ dummy_string = dummy_phrase.replace('@','').replace('/','').replace('"','')
 print(dummy_string)
 ```
 
+### (Python) Perform de-dupe on list
+```
+dupe_list = ['A', 'B', 'A']
+clean_list = []
+for letter in dupe_list:
+	if letter not in clean_list:
+		clean_list.append(letter)
+```
+
 ### (Go) Code for creating initial Go project
 ```
 package main
