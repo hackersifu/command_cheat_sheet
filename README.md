@@ -73,6 +73,11 @@ netstat -l
 %3E = >
 %2F = /
 %3F = ?
+%00 = NULL
+%20 = space
+%26 = &
+	Example of " && "
+		%20%26%26%20
 ```
 
 ### Append text to end of file (quickly)
