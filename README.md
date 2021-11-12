@@ -65,6 +65,16 @@ TBLPROPERTIES
 netstat -l
 ```
 
+### URL Encoded Characters for basic injection attacks
+```
+%27 = '
+%22 = "
+%3C = <
+%3E = >
+%2F = /
+%3F = ?
+```
+
 ### Append text to end of file (quickly)
 ```
 echo 'text' >> file
