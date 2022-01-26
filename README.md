@@ -242,7 +242,7 @@ Mac: Command + /
 
 ### (VSCode) Go to beginning of all lines
 ```
-Mac: Ctrl + A (to select all lines), Shift + Alt + I (to put cursor at end of all lines), Home key (to go to beginning of each line)
+Mac: Ctrl + A to select all lines, Shift + Alt + I (Windows) or Shift + Option + I to put cursor at end of all lines, Home key to go to beginning of each line
 ```
 
 ### (argparse) How to use an option with no required argument
