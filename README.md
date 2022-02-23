@@ -224,6 +224,11 @@ OR
 git fetch -p
 ```
 
+### (Git) How to delete a release tag
+```
+git push --delete origin <tag_name>
+```
+
 ### How to beautify large JSON files
 ```
 cat <file_name> | python -m json.tool > <new_file_name>
