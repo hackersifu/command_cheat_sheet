@@ -229,6 +229,11 @@ git fetch -p
 git push --delete origin <tag_name>
 ```
 
+### (Git) How to update tags (to solve the would clobber existing tag error)
+```
+git fetch --tags -f
+```
+
 ### How to beautify large JSON files
 ```
 cat <file_name> | python -m json.tool > <new_file_name>
