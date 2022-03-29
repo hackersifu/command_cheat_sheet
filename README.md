@@ -550,3 +550,11 @@ if (a == 1 and b ==2):
 user = "John"
 print("Hello {name}".format(name=user))
 ```
+
+### (Terraform) Creating an EC2 instance
+```
+resource "aws_instance" "testing" {
+  ami = "<dummy_ami>"
+  instance_type = "t2.micro"
+  subnet_id = "<dummy_subnet_id>" # Required field if the default VPC is not being used.
+```
