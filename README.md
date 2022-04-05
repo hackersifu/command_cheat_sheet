@@ -558,3 +558,8 @@ resource "aws_instance" "testing" {
   instance_type = "t2.micro"
   subnet_id = "<dummy_subnet_id>" # Required field if the default VPC is not being used.
 ```
+
+### (Terraform) Switch the working directory to deploy from
+```
+terraform -chdir=<path_to_deploy_from> apply
+```
