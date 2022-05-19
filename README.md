@@ -563,3 +563,12 @@ resource "aws_instance" "testing" {
 ```
 terraform -chdir=<path_to_deploy_from> apply
 ```
+
+### (Bash) (OPA) OPA Policy Evaluation Command
+```
+# OPA Policy Evaluation Command
+./opa eval --format pretty -i <stack_file_name>.json -d <rego_file_name>.rego "data"
+# Query to get the value of allow:
+./opa eval --format pretty -i <stack_file_name>.json -d <rego_file_name>.rego "data" | jq --raw-output '.opa_policies.allow' > allow.txt
+```
+
