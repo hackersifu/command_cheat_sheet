@@ -572,3 +572,10 @@ terraform -chdir=<path_to_deploy_from> apply
 ./opa eval --format pretty -i <stack_file_name>.json -d <rego_file_name>.rego "data" | jq --raw-output '.opa_policies.allow' > allow.txt
 ```
 
+### (Git) How to stash changes to a file
+```
+# Stash changes to a branch
+git stash
+# Unstash changes to a branch
+git stash pop
+```
