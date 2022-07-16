@@ -178,6 +178,12 @@ if [ ! -f /home/user/test.txt ]; then
 fi
 ```
 
+### (Bash) Operators for running multiple commands in one line
+1 && 2 - runs 2 if 1 is successful
+1 ; 2 - runs 1 then 2 (doesn't matter if successful)
+1 || 2 - runs 2 if 1 fails
+1 | 2 - runs 1 then pipes output to 2
+
 ### (Python) Handy imports for starting a script
 ```
 import logging
