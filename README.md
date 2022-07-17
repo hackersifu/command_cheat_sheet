@@ -178,6 +178,11 @@ if [ ! -f /home/user/test.txt ]; then
 fi
 ```
 
+### (Bash) Export all local set variables
+```
+export -p
+```
+
 ### (Bash) Operators for running multiple commands in one line
 ```
 1 && 2 - runs 2 if 1 is successful
