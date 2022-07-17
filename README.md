@@ -166,7 +166,7 @@ awk '{print NR,$0} file.txt
 
 ### (Bash) Check to see if a directory exists, then create it if it doesn't
 ```
-if [ ! -f /home/user ]: then
+if [ ! -f /home/user ]; then
   mkdir /home/user
 fi
 ```
@@ -179,10 +179,18 @@ fi
 ```
 
 ### (Bash) Operators for running multiple commands in one line
+```
 1 && 2 - runs 2 if 1 is successful
 1 ; 2 - runs 1 then 2 (doesn't matter if successful)
 1 || 2 - runs 2 if 1 fails
 1 | 2 - runs 1 then pipes output to 2
+```
+
+### (Bash) Use -exec command with find for grepping specific strings
+```
+#The "{} \;" operators at the end of the command are required
+find / -name <filename> -exec grep <string> {} \;
+```
 
 ### (Python) Handy imports for starting a script
 ```
