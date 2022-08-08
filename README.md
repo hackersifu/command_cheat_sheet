@@ -193,10 +193,26 @@ export -p
 
 ### (Bash) Use -exec command with find for grepping specific strings
 ```
-#The "{} \;" operators at the end of the command are required. Example:
+# The "{} \;" operators at the end of the command are required. Example:
 find / -name <filename> -exec grep <string> {} \;
 # Do a search that starts with the string that you are looking for with '^<string>'. Example:
 find / -name <filename> -exec grep '^<string>' {} \;
+# Check file location using find and grep with -H. Example:
+find / -name <filename> -exec grep -H <string> {} \;
+# Check lines within a file with -A <number>. Example:
+find / -name <filename> -exec grep -A 3 <string> {} \;
+```
+
+### (Bash) tar commands
+```
+# Tar Switches
+# -x: Extract files from an archive.
+# -z: uses the compress program when operating on files
+# -v: Verbose
+# -f: use file within the command
+
+# Tar Examples
+tar -xzvf <file>.tgz
 ```
 
 ### (Python) Handy imports for starting a script
