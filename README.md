@@ -193,8 +193,10 @@ export -p
 
 ### (Bash) Use -exec command with find for grepping specific strings
 ```
-#The "{} \;" operators at the end of the command are required
+#The "{} \;" operators at the end of the command are required. Example:
 find / -name <filename> -exec grep <string> {} \;
+# Do a search that starts with the string that you are looking for with '^<string>'. Example:
+find / -name <filename> -exec grep '^<string>' {} \;
 ```
 
 ### (Python) Handy imports for starting a script
