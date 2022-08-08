@@ -292,6 +292,11 @@ Mac: Command + /
 Mac: Ctrl + A to select all lines, Shift + Alt + I (Windows) or Shift + Option + I to put cursor at end of all lines, Home key to go to beginning of each line
 ```
 
+### (VSCode) Open VSCode as root
+```
+sudo code --user-data-dir="." --no-sandbox
+```
+
 ### (argparse) How to use an option with no required argument
 ```
 parser.add_argument('--fake-option', action='store_true')
