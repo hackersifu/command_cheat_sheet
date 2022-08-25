@@ -464,6 +464,18 @@ for letter in dupe_list:
 		clean_list.append(letter)
 ```
 
+### (Python) How to neatly parse arrays
+```
+# Scale down to the array to parse
+CoreValueList: list = []
+array_parse = payload['Array']
+# Create a for loop to look for the value you need, and return value based on your logic
+for core_value in array_parse:
+	print(core_value)
+	if (core_value['Array_Value'] == 'foo'):
+		CoreValueList.append(core_value)
+```
+
 ### (Go) Code for creating initial Go project
 ```
 package main
