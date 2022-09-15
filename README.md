@@ -476,6 +476,23 @@ for core_value in array_parse:
 		CoreValueList.append(core_value)
 ```
 
+### (Python) Basic working with classes
+```
+# Simple Class
+class CamelCaseName:
+	"""Docstring for class"""
+	value = "One"
+
+# How to call class values
+def call_class_values:
+	"""Function to call class values"""
+	number = CamelCaseName.value # Retrieves value within the class above
+	print(number)
+
+# How to call class doc string
+print(CamelCaseName.__doc__)
+```
+
 ### (Go) Code for creating initial Go project
 ```
 package main
