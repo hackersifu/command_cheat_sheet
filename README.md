@@ -281,6 +281,11 @@ cat <file_name> | python -m json.tool > <new_file_name>
 jq --raw-output '.field,.sub_field'
 ```
 
+### Using jq slurp
+```
+jq --slurp '.' *
+```
+
 ### (VSCode) Mass Comment/Uncomment of lines in VSCode
 ```
 Windows: Ctrl + /
