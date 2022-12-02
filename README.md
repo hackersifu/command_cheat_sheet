@@ -316,10 +316,10 @@ virtualenv --python=python3 venv
 source venv/bin/activate
 ```
 
-### (vi) vi commands
+### (vi/vim) vi/vim commands
 ```
 :w - write to file
-:q (:q!) - quit file
+:q - quit file
 x - deletes characters
 u - undo change
 dd - deletes entire line
@@ -335,7 +335,9 @@ f - find character within a line
 :e - add second file to edit
 :buffer - switch files
 :wq - save and quit
+:wq! - save and quit (without prompt)
 :q! - quit without saving
+$ - go to the end of a line
 ```
 
 ### (Bash) Starting an Apache2 server
