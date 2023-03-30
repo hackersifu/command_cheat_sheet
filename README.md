@@ -60,6 +60,12 @@ TBLPROPERTIES
 )
 ```
 
+### (Athena SQL) Multiple values in WHERE clause using IN
+```
+SELECT * FROM "database"."table"
+WHERE value IN ('unique_value1','unique_value2')
+```
+
 ### Review open Linux ports
 ```
 netstat -l
