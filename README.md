@@ -670,3 +670,12 @@ git stash
 # Unstash changes to a branch
 git stash pop
 ```
+
+### (Git) How to rebase a branch
+```
+# From checked out branch (or feature branch)
+git rebase <main branch>
+# To update settings for git config rebasing
+git config rebase.true
+# Reference: git-scm.com/docs/git-rebase
+```
