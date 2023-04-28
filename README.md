@@ -322,6 +322,18 @@ virtualenv --python=python3 venv
 source venv/bin/activate
 ```
 
+### (MacOS) Create virtual environment for running Python
+```
+# Install virtualenv
+pip install virtualenv (might need sudo)
+# Create virtual environment
+virtualenv venv
+# Activate virtual environment
+source venv/bin/activate
+# Deactivate virtual environment
+deactivate
+```
+
 ### (vi/vim) vi/vim commands
 ```
 :w - write to file
@@ -678,4 +690,19 @@ git rebase <main branch>
 # To update settings for git config rebasing
 git config rebase.true
 # Reference: git-scm.com/docs/git-rebase
+```
+
+### (Git) How to remove a commit
+```
+# Remove the last commit
+git reset --hard HEAD~1
+git push --force
+# Remove a specific commit
+git reset --hard <commit_hash>
+git push --force
+```
+
+### Updating Yarn lock file
+```
+yarn install --mode update-lockfile
 ```
