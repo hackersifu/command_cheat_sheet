@@ -518,6 +518,15 @@ def call_class_values:
 print(CamelCaseName.__doc__)
 ```
 
+### (Python) Update symbolic link of python command
+```
+# Check current symbolic link
+ls -l /usr/bin/python
+# Update symbolic link (example uses updating to 3.8)
+rm /usr/bin/python (or python3)
+ln -s /usr/bin/python3.8 /usr/bin/python (or python3)
+```
+
 ### (Go) Code for creating initial Go project
 ```
 package main
