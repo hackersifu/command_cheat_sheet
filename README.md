@@ -715,3 +715,8 @@ git push --force
 ```
 yarn install --mode update-lockfile
 ```
+
+### (Git) Test Command
+```
+testing
+```
