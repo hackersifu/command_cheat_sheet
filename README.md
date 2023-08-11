@@ -715,3 +715,13 @@ git push --force
 ```
 yarn install --mode update-lockfile
 ```
+
+### (Bash) tmux cheat sheet
+```
+# Open tmux
+tmux
+# Begin session with specific name
+tmux new -s <session_name>
+# Kill tmux session
+tmux kill-session -t <session_number>
+```
