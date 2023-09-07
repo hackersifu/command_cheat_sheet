@@ -628,6 +628,14 @@ if !a {
 }
 ```
 
+### (Go) Add libraries
+```
+# Initialize repo to add go.mod
+go init <file name with modules>
+# Use tidy to load the modules
+go mod tidy
+```
+
 ### (Windows cmd) How to kill processes
 ```
 taskkill /F /IM "taskname.exe"
