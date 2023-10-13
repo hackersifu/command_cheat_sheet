@@ -647,6 +647,14 @@ if !a {
 }
 ```
 
+### (Go) Add libraries
+```
+# Initialize repo to add go.mod
+go init <file name with modules>
+# Use tidy to load the modules
+go mod tidy
+```
+
 ### (Windows cmd) How to kill processes
 ```
 taskkill /F /IM "taskname.exe"
@@ -733,4 +741,14 @@ git push --force
 ### Updating Yarn lock file
 ```
 yarn install --mode update-lockfile
+```
+
+### (Bash) tmux cheat sheet
+```
+# Open tmux
+tmux
+# Begin session with specific name
+tmux new -s <session_name>
+# Kill tmux session
+tmux kill-session -t <session_number>
 ```
