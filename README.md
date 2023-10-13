@@ -527,6 +527,25 @@ rm /usr/bin/python (or python3)
 ln -s /usr/bin/python3.8 /usr/bin/python (or python3)
 ```
 
+### (Python) Convert input value to string
+```
+input_value_raw = input("Enter a value: ")
+print(type(input_value))
+input_value = str(input_value_raw)
+```
+
+### (Python) Convert dict to string and back
+```
+# Convert dict to string
+dict_value = {'key1': 'value1', 'key2': 'value2'}
+dict_value_string = str(dict_value)
+print(type(dict_value_string))
+# Convert string to dict
+dict_value_string = "{'key1': 'value1', 'key2': 'value2'}"
+dict_value = eval(dict_value_string)
+print(type(dict_value))
+```
+
 ### (Go) Code for creating initial Go project
 ```
 package main
