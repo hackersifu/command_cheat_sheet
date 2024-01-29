@@ -546,6 +546,15 @@ dict_value = eval(dict_value_string)
 print(type(dict_value))
 ```
 
+### (Python) Create if statement based on a pre-defined list
+```
+# Create a list
+list_value = ['value1', 'value2', 'value3']
+# Create an if statement
+if 'value1' in list_value:
+	print('value1 is in the list')
+```
+
 ### (Go) Code for creating initial Go project
 ```
 package main
@@ -751,4 +760,14 @@ tmux
 tmux new -s <session_name>
 # Kill tmux session
 tmux kill-session -t <session_number>
+```
+
+### (Bash) Using grep to find a specific case-insensitive string within files in current directory
+```
+grep <word> * -i
+```
+
+### Create a symbolic link
+```
+ln -s <file> <link>
 ```
