@@ -771,3 +771,21 @@ grep <word> * -i
 ```
 ln -s <file> <link>
 ```
+
+### Redis-cli commands
+```
+# Connect to a Redis server
+redis-cli -h <hostname>
+```
+
+### Redis commands (Link: https://redis.io/docs/latest/commands/)
+```
+# Select a database
+> select
+#Look at information and statistics of a Redis server (when connected)
+> info
+# List all available keys
+> KEYS *
+# Get value of key
+> get <key value name> (can't use the number of the key here)
+```
