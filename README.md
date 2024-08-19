@@ -334,6 +334,28 @@ source venv/bin/activate
 deactivate
 ```
 
+### (Windows) Create virtual environment for running Python
+```
+# Create virtual environment using built in Python module
+python -m venv venv
+# Activate the virtual environment
+.\venv\Scripts\activate.ps1
+```
+
+### (Python) Starting a Virtual Environment
+```
+# Install virtualenv
+pip install virtualenv
+# OR
+pip3 install virtualenv
+# Then
+python3 -m venv env # This may not work, try skipping this step
+# Create virtual environment
+virtualenv -p python3 <envname> # Name the environment whatever you want
+# Active the env environment
+source <envname>/bin/activate
+```
+
 ### (vi/vim) vi/vim commands
 ```
 :w - write to file
@@ -667,20 +689,6 @@ go mod tidy
 ### (Windows cmd) How to kill processes
 ```
 taskkill /F /IM "taskname.exe"
-```
-
-### (Python) Starting a Virtual Environment
-```
-# Install virtualenv
-pip install virtualenv
-# OR
-pip3 install virtualenv
-# Then
-python3 -m venv env # This may not work, try skipping this step
-# Create virtual environment
-virtualenv -p python3 <envname> # Name the environment whatever you want
-# Active the env environment
-source <envname>/bin/activate
 ```
 
 ### (Python) Using mutliple conditions in if statements
