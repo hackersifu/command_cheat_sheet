@@ -340,6 +340,10 @@ deactivate
 python -m venv venv
 # Activate the virtual environment
 .\venv\Scripts\activate.ps1
+# Validate which Python environment you're using (virtual or real)
+python -c "import sys; print(sys.executable)"
+# Deactivate the environment
+deactivate
 ```
 
 ### (Python) Starting a Virtual Environment
