@@ -801,3 +801,25 @@ redis-cli -h <hostname>
 # Get value of key
 > get <key value name> (can't use the number of the key here)
 ```
+
+### (Python)(ML) Typical imports for using machine learning and Python
+```
+# NumPy, the mathmatical foundation for most scientific Python libraries
+import numpy
+#scikit-learn, a library that provides many machine learning and data science primitives
+import sklearn
+# Examples of using sklearn
+from sklearn.datasets import fetch_california_housing
+from sklearn.model_selection import ShuffleSplit
+from sklearn.linear_model import LinearRegression, LogisticRegression
+from sklearn.metrics import (
+    auc,
+    confusion_matrix,
+    ConfusionMatrixDisplay,
+    roc_curve,
+    roc_auc_score,
+    accuracy_score,
+    classification_report,
+    mean_squared_error,
+)
+```
