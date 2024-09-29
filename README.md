@@ -837,3 +837,13 @@ node -v
 # Check version of npm
 npm -v
 ```
+
+### (Node)(TypeScript) How to run a TypeScript file locally
+```
+# Install TypeScript
+npm install -g typescript
+# Convert TypeScript to JavaScript
+tsc <filename>.ts
+# Run the JavaScript file
+node <filename>.js
+```
