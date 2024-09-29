@@ -823,3 +823,17 @@ from sklearn.metrics import (
     mean_squared_error,
 )
 ```
+
+### (Node)(TypeScript) How to create a virtual enviornment for Node and TypeScript
+```
+# Do these steps after creating a Python venv
+pip install nodeenv
+# Create new Node environment
+nodeenv nenv
+# Activate Node environment
+source nenv/Scripts/activate.ps1
+# Check version of Node
+node -v
+# Check version of npm
+npm -v
+```
