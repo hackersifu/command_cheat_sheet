@@ -666,6 +666,11 @@ func ec2_test() {
 GOOS=windows GOARCH=amd64 go build -o go_code.exe go_code.go
 ```
 
+### (Go) Add Go to PATH on Linux
+```
+export PATH=$PATH:/usr/local/go/bin
+```
+
 ### (Go) How to use AND/OR/NOT in Go
 ```
 // AND
