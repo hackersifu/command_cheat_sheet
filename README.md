@@ -402,16 +402,23 @@ if 'JSONKey' in json:
 * Credit to HackerOne: https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF
 ```
 # Create a Ruby file for running a vulnerable server
+touch vuln-server.rb
 vim vuln-server.rb
 # Add the following content to the file:
 require 'sinatra'
-require 'open-uri'
+require 'net/http'
+require 'uri'
 
-set :bind, '0.0.0.0'
+set :bind, '0.0.0.0'  # Allows connections from outside the localhost
 set :port, 80
 
-get '/' do
-  format 'RESPONSE: %s', open(params[:url]).read
+get '/fetch' do
+  target_url = params[:url]
+
+  uri = URI.parse(target_url)
+  response = Net::HTTP.get_response(uri)
+
+  "Response from the URL: #{response.body}"
 end
 # Install Sinatra using Ruby
 gem install sinatra
