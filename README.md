@@ -209,6 +209,10 @@ find / -name <filename> -exec grep -H <string> {} \;
 find / -name <filename> -exec grep -A 3 <string> {} \;
 ```
 
+### (Bash) Find where a program is locally installed
+```
+```
+
 ### (Bash) tar commands
 ```
 # Tar Switches
