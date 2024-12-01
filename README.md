@@ -211,6 +211,7 @@ find / -name <filename> -exec grep -A 3 <string> {} \;
 
 ### (Bash) Find where a program is locally installed
 ```
+which <program name>
 ```
 
 ### (Bash) tar commands
