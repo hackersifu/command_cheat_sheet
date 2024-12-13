@@ -873,3 +873,13 @@ ts-node
 # NOTE: Use this command to override the default module, if you're having export errors:
 ts-node --compiler-options '{"module":"commonjs"}'
 ```
+
+### (Node)(TypeScript) How to use REPL to find page paths in a TypeScript project
+```
+# For a project with this layout:https://github.com/hackersifu/typescript-learning/tree/main/samples/repl
+# Validate installations
+npx ts-node --version
+npx tsc --version
+# Test individual files with ts-node
+npx ts-node <file path and name>
+```
