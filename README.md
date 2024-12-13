@@ -843,7 +843,6 @@ from sklearn.metrics import (
 
 ### (Node)(TypeScript) How to create a virtual enviornment for Node and TypeScript
 ```
-# Do these steps after creating a Python venv
 pip install nodeenv
 # Create new Node environment
 nodeenv nenv
@@ -863,4 +862,14 @@ npm install -g typescript
 tsc <filename>.ts
 # Run the JavaScript file
 node <filename>.js
+```
+
+### (Node)(TypeScript) How to use REPL in Type Script
+```
+# After spinning up a TypeScript virtual environment, install TypeScript and REPL:
+npm install -g ts-node typescript @types/node
+# Start the REPL
+ts-node
+# NOTE: Use this command to override the default module, if you're having export errors:
+ts-node --compiler-options '{"module":"commonjs"}'
 ```
