@@ -216,6 +216,7 @@ find / -name <filename> -exec grep -A 3 <string> {} \;
 
 ### (Bash) Find where a program is locally installed
 ```
+which <program name>
 ```
 
 ### (Bash) tar commands
@@ -847,7 +848,6 @@ from sklearn.metrics import (
 
 ### (Node)(TypeScript) How to create a virtual enviornment for Node and TypeScript
 ```
-# Do these steps after creating a Python venv
 pip install nodeenv
 # Create new Node environment
 nodeenv nenv
@@ -867,4 +867,24 @@ npm install -g typescript
 tsc <filename>.ts
 # Run the JavaScript file
 node <filename>.js
+```
+
+### (Node)(TypeScript) How to use REPL in Type Script
+```
+# After spinning up a TypeScript virtual environment, install TypeScript and REPL:
+npm install -g ts-node typescript @types/node
+# Start the REPL
+ts-node
+# NOTE: Use this command to override the default module, if you're having export errors:
+ts-node --compiler-options '{"module":"commonjs"}'
+```
+
+### (Node)(TypeScript) How to use REPL to find page paths in a TypeScript project
+```
+# For a project with this layout:https://github.com/hackersifu/typescript-learning/tree/main/samples/repl
+# Validate installations
+npx ts-node --version
+npx tsc --version
+# Test individual files with ts-node
+npx ts-node <file path and name>
 ```
