@@ -142,7 +142,12 @@ git clone <url>
 eval "$(ssh-agent -s)"
 ```
 
-### Perform a difference between two lists (Python)
+### (Python) Check all installed versions (using pip)
+```
+pip freeze
+```
+
+### (Python) Perform a difference between two lists
 ```
 final_list = (list(set(first_list) - set(second_list)))
 ```
