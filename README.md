@@ -717,6 +717,16 @@ go mod tidy
 taskkill /F /IM "taskname.exe"
 ```
 
+### (Docker)(Powershell) How to reclaim unused space of the .vhdx file
+```
+# Open Diskpart
+diskpart
+# Attach the vhdx file (typically located in AppData\Local)
+select vdisk file="%LOCALAPPDATA%\Docker\wsl\disk\docker_data.vhdx"
+# Compact the vhdx file
+compact vdisk
+```
+
 ### (Python) Using mutliple conditions in if statements
 ```
 if a == 1 && b == 2 {
