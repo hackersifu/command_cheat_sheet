@@ -791,6 +791,11 @@ git reset --hard <commit_hash>
 git push --force
 ```
 
+### (Git) How to print out a Git repository as a tree (needs tree installed)
+```
+git ls-tree -r --name-only HEAD | tree --fromfile
+```
+
 ### Updating Yarn lock file
 ```
 yarn install --mode update-lockfile
