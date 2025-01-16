@@ -202,6 +202,11 @@ export -p
 1 | 2 - runs 1 then pipes output to 2
 ```
 
+### (Bash) Use Find to find a string in a filename, while removing permission denied errors
+```
+find / -name *<string>* 2>/dev/null
+```
+
 ### (Bash) Use -exec command with find for grepping specific strings
 ```
 # The "{} \;" operators at the end of the command are required. Example:
