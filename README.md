@@ -349,6 +349,20 @@ source venv/bin/activate
 deactivate
 ```
 
+### (Linux) Create virtual environment for running Python
+```
+# Install virtualenv
+pip install python3-virtualenv (might need sudo)
+# Create virtual environment
+virtualenv venv
+# Activate virtual environment
+source venv/bin/activate
+# Validate which Python environment you're using (virtual or real)
+python -c "import sys; print(sys.executable)"
+# Deactivate virtual environment
+deactivate
+```
+
 ### (Windows) Create virtual environment for running Python
 ```
 # Create virtual environment using built in Python module
