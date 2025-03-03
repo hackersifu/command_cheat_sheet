@@ -746,6 +746,11 @@ select vdisk file="%LOCALAPPDATA%\Docker\wsl\disk\docker_data.vhdx"
 compact vdisk
 ```
 
+### (Docker) How to clean up space used by unused containers
+```
+docker system prune -a
+```
+
 ### (Python) Using mutliple conditions in if statements
 ```
 if a == 1 && b == 2 {
