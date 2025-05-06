@@ -850,6 +850,14 @@ tmux kill-session -t <session_number>
 grep <word> * -i
 ```
 
+### (Bash) Using pushd and popd to navigate directories
+```
+# Pushd to a directory
+pushd <directory>
+# Popd to return to the previous directory	
+popd
+```
+
 ### Create a symbolic link
 ```
 ln -s <file> <link>
