@@ -258,6 +258,16 @@ current_date_string = str(current_date)
 aws s3 ls %s --recursive | tail -n +1 | head -1" % file_name
 ```
 
+### (AWS CLI) Remove contents of an S3 bucket
+```
+aws s3 rm s3://<bucket_name> --recursive
+```
+
+### (AWS CLI) Delete an S3 bucket
+```
+aws s3 rb s3://<bucket_name> --force
+```
+
 ### (Git) How to checkout a remote branch
 ```
 git pull
