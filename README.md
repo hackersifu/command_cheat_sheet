@@ -349,6 +349,11 @@ source venv/bin/activate
 deactivate
 ```
 
+### (MacOS) Read entire command line history
+```
+history 0
+```
+
 ### (Linux) Create virtual environment for running Python
 ```
 # Install virtualenv
